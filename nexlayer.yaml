@@ -1,0 +1,12 @@
+application:
+  name: gogs
+  pods:
+  - name: app
+    image: gogs/gogs:latest
+    path: /
+    servicePorts:
+    - 3000
+    volumes:
+    - name: gogs-data
+      mountPath: /data
+      size: 10Gi
