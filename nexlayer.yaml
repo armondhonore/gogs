@@ -2,7 +2,7 @@ application:
   name: gogs
   pods:
   - name: app
-    image: gogs/gogs:latest
+    image: mirror.gcr.io/gogs/gogs:latest
     path: /
     servicePorts:
     - 3000
